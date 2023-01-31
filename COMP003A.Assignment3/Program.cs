@@ -10,35 +10,35 @@ namespace COMP003A.Assignment3
     {
         static void Main(string[] args)
         {
-            Console.ForegroundColor = ConsoleColor.White;        // Allows the console to be white.
-            Console.Write("Please Enter Total Grade (0-100): "); // Tells the user to input a number 0-100.
+            Console.ForegroundColor = ConsoleColor.White;                 // Allows the console to be white.
+            Console.Write("Please Enter Total Grade (0-100): ");          // Tells the user to input a number 0-100.
             string grade = Console.ReadLine();
-            double TotalGrade = Convert.ToDouble(grade);         // Converts string into a double which will allow decimal values.
+            double TotalGrade = Convert.ToDouble(grade);                  // Converts string into a double which will allow decimal values.
 
-            if (TotalGrade >= 90 && TotalGrade == 100)           // First condition checks wether the score is within 90-100
+            if (TotalGrade >= 90 && TotalGrade == 100)                    // First condition checks wether the score is within 90-100
             {
-                Console.WriteLine("Letter Grade: A");            // If this condition is met, the letter grade A will be displayed.
+                Console.WriteLine("Letter Grade: A");                     // If this condition is met, the letter grade A will be displayed.
                 
             }
-            else if (TotalGrade >= 80 && TotalGrade <= 89)      // Second condition checks wether the score is within 80-89
+            else if (TotalGrade >= 80 && TotalGrade <= 89.9)              // Second condition checks wether the score is within 80-89
             {
-                Console.WriteLine("Letter Grade: B");           // If this condition is met, the letter grade B will be displayed.
+                Console.WriteLine("Letter Grade: B");                     // If this condition is met, the letter grade B will be displayed.
             }
-            else if (TotalGrade >= 70 && TotalGrade <= 79)      // Third condition checks wether the score is within 70-79
+            else if (TotalGrade >= 70 && TotalGrade <= 79.9)              // Third condition checks wether the score is within 70-79
             {
-                Console.WriteLine("Letter Grade: C");           // If this condition is met, the letter grade C will be displayed.
+                Console.WriteLine("Letter Grade: C");                     // If this condition is met, the letter grade C will be displayed.
             }
-            else if (TotalGrade >= 60 && TotalGrade <= 69)      // Fourth condition checks wether the score is within 60-69
+            else if (TotalGrade >= 60 && TotalGrade <= 69.9)              // Fourth condition checks wether the score is within 60-69
             {
-                Console.WriteLine("Letter Grade: D");           // If this condition is met, the letter grade D will be displayed.
+                Console.WriteLine("Letter Grade: D");                     // If this condition is met, the letter grade D will be displayed.
             }
-            else if (TotalGrade >=0 && TotalGrade <= 59)        // Fifth condition checks wether the score is within 0-59
+            else if (TotalGrade >=0 && TotalGrade <= 59.9)                // Fifth condition checks wether the score is within 0-59
             {
-                Console.WriteLine("Letter Grade: F");           // If this condition is met, the letter grade F will be displayed.
+                Console.WriteLine("Letter Grade: F");                     // If this condition is met, the letter grade F will be displayed.
             }
-            else                                               // This statement will terminate the code if a value that is not within 0-100 is entered.
+            else                                                          // This statement will terminate the code if a value that is not within 0-100 is entered.
             {
-              Console.WriteLine("Invalid Input!");             // Invalid input will be displayed if conditions are not satisfied. 
+              Console.WriteLine("Invalid Input!");                        // Invalid input will be displayed if conditions are not satisfied. 
             }
            
             Console.WriteLine("*****************************************");
