@@ -43,7 +43,7 @@ namespace COMP003A.Assignment3
                 }
                 else                                                          // This statement will terminate the code if a value that is not within 0-100 is entered.
                 {
-                    Console.WriteLine("Invalid Input!");                      // Invalid input will be displayed if conditions are not satisfied. 
+                    Console.WriteLine("Invalid Input! ");                      // Invalid input will be displayed if conditions are not satisfied. 
                 }
                 Console.WriteLine("\n*****************************************");
                 Console.WriteLine("Integer to String Day Using a Switch Statement");
