@@ -12,6 +12,9 @@ namespace COMP003A.Assignment3
         static void Main(string[] args)
         {
             Console.ForegroundColor = ConsoleColor.White;                 // Allows the console to be white.
+            Console.WriteLine("*****************************************");
+            Console.WriteLine("Numeric to lettergrade using if-else sttement");
+            Console.WriteLine("*****************************************");
             Console.Write("Please Enter Total Grade (0-100): ");          // Tells the user to input a number 0-100.
             string grade = Console.ReadLine();
             double TotalGrade = Convert.ToDouble(grade);                  // Converts string into a double which will allow decimal values.
@@ -40,10 +43,13 @@ namespace COMP003A.Assignment3
                 }
                 else                                                          // This statement will terminate the code if a value that is not within 0-100 is entered.
                 {
-                    Console.WriteLine("Invalid Input!");                        // Invalid input will be displayed if conditions are not satisfied. 
+                    Console.WriteLine("Invalid Input!");                      // Invalid input will be displayed if conditions are not satisfied. 
                 }
+                Console.WriteLine("\n*****************************************");
+                Console.WriteLine("Integer to String Day Using a Switch Statement");
                 Console.WriteLine("*****************************************");
                 Console.Write("Enter an Integer day of the week (1-7) with monday being 1:");     // Prompts user to input an integer 1-7 that will correspond to a day of the week. 
+
                 string WeekNum = Console.ReadLine();                          // Stores input as a string.
                 int numericDay = Convert.ToInt32(WeekNum);                    // Converts strign to integer. 
 
